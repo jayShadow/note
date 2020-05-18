@@ -61,18 +61,19 @@ ResourceServer
 	org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ec9eefa
 ]
 
+AuthorizationServer
 [
-	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2401856, 
-	org.springframework.security.web.context.SecurityContextPersistenceFilter@309dcdf3, 
-	org.springframework.security.web.header.HeaderWriterFilter@2eda4eeb, 
-	
-	org.springframework.security.web.csrf.CsrfFilter@35bfa1bb, 
-	org.springframework.security.web.authentication.logout.LogoutFilter@149b4d20, 
-	org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b57c345, 
-	org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@35dece42, 
-	org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d6f6860, 
-	org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a8b33ba, 
-	
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2401856,
+	org.springframework.security.web.context.SecurityContextPersistenceFilter@309dcdf3,
+	org.springframework.security.web.header.HeaderWriterFilter@2eda4eeb,
+	--------------------------1----------------------------
+	org.springframework.security.web.csrf.CsrfFilter@35bfa1bb,
+	org.springframework.security.web.authentication.logout.LogoutFilter@149b4d20,
+	org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b57c345,
+	org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@35dece42,
+	org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d6f6860,
+	org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a8b33ba,
+	-------------------------end---------------------------
 	org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7573b9ee, 
 	org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@543d5863, 
 	org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a4f8009, 
