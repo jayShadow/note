@@ -1,0 +1,29 @@
+- bootstrap.yml 与 application.yml 的区别
+
+
+
+
+2020-06-15 17:23:13.508  INFO 9812 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-06-15 17:23:13.586  WARN 9812 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: label not found
+2020-06-15 17:23:13.587  INFO 9812 --- [           main] com.deyt.zuul.GatewayApplication         : No active profile set, falling back to default profiles: default
+2020-06-15 17:23:14.064  WARN 9812 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-06-15 17:23:14.184  WARN 9812 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-06-15 17:23:14.193  WARN 9812 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-06-15 17:23:14.311  INFO 9812 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a6dffd1e-6346-3520-ba4e-36750bd95550
+2020-06-15 17:23:14.466  INFO 9812 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$882f702a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-15 17:23:14.549  WARN 9812 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$1e1c919d]: Constructor threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gatewayApplication': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'test' in value "${test}"
+2020-06-15 17:23:14.557  INFO 9812 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+
+
+2020-06-15 17:11:17.661  INFO [api-gateway,,,] 5208 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://192.168.1.154:8888/
+2020-06-15 17:11:18.011  INFO [api-gateway,,,] 5208 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=api-gateway, profiles=[default], label=null, version=null, state=null
+2020-06-15 17:11:18.011  INFO [api-gateway,,,] 5208 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/shared/api-gateway.yml'}, MapPropertySource {name='classpath:/shared/application.yml'}]}
+2020-06-15 17:11:18.049  INFO [api-gateway,,,] 5208 --- [           main] com.cloud.ApiGatewayApplication          : No active profile set, falling back to default profiles: default
+2020-06-15 17:11:18.956  WARN [api-gateway,,,] 5208 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-06-15 17:11:19.145  INFO [api-gateway,,,] 5208 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-15 17:11:19.148  INFO [api-gateway,,,] 5208 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-15 17:11:19.255  INFO [api-gateway,,,] 5208 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 0 repository interfaces.
+2020-06-15 17:11:19.302  WARN [api-gateway,,,] 5208 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-06-15 17:11:19.366  WARN [api-gateway,,,] 5208 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-06-15 17:11:19.596  INFO [api-gateway,,,] 5208 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9b0243d0-a9f7-359c-a4e4-9f57c1adc265
