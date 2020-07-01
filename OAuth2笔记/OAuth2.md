@@ -6,6 +6,22 @@ password,authorization_code,refresh_token,client_credentials,implicit
 
 Oauth2 
 
+requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], 
+[   
+    org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fa7df1, 
+    org.springframework.security.web.context.SecurityContextPersistenceFilter@12c0c0b3, 
+    org.springframework.security.web.header.HeaderWriterFilter@6b6eae52, 
+    org.springframework.security.web.authentication.logout.LogoutFilter@34d713a2, 
+    org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@45545e7a, 
+    org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e224df5, 
+    org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9c73fff, 
+    org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32bb0072, 
+    org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dd90166, 
+    org.springframework.security.web.session.SessionManagementFilter@7af52ec7, 
+    org.springframework.security.web.access.ExceptionTranslationFilter@7c20cdd0, 
+    org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7237f3c1
+]
+
 WebSecurity
 [
 	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@994544, 
