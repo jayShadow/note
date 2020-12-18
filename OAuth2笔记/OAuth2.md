@@ -76,7 +76,21 @@ ResourceServer
 	org.springframework.security.web.access.ExceptionTranslationFilter@3e6ec74, 
 	org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ec9eefa
 ]
-
+[
+    org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@457692cb, 
+    org.springframework.security.web.context.SecurityContextPersistenceFilter@6d7865d6, 
+    org.springframework.security.web.header.HeaderWriterFilter@3b2db389, 
+    
+    org.springframework.security.web.authentication.logout.LogoutFilter@e5c5e6, 
+    org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@56c6d515,
+     
+    org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77f03916, 
+    org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@492c9892, 
+    org.springframework.security.web.authentication.AnonymousAuthenticationFilter@350342e0, 
+    org.springframework.security.web.session.SessionManagementFilter@2dc3ece8, 
+    org.springframework.security.web.access.ExceptionTranslationFilter@7884f722, 
+    org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e994ca
+]
 AuthorizationServer
 [
 	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2401856,
